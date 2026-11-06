@@ -67,16 +67,26 @@
   <ul>
     <li>Sensor readings are measured and shown <strong>entirely on your device</strong>. They are not stored, logged or uploaded.</li>
     <li>Camera frames are shown live only. A photo is saved to your device only when you tap <em>Take a photo</em>, and it is never sent anywhere.</li>
-    <li>The app contains <strong>no advertising, no analytics and no crash-reporting SDKs</strong>.</li>
+    <li>The app contains Google&rsquo;s advertising SDK (AdMob) for one banner on the <em>Tools</em> list, never on a measuring screen. <strong>Ads are switched off until September 1, 2027</strong>: until then the SDK is never started, makes no network requests and collects nothing. From that date it may collect the device data listed in section 2. There are no analytics or crash-reporting SDKs.</li>
     <li>There is no account and no sign-in. Settings and calibration offsets stay in the app&rsquo;s private storage on your device.</li>
-    <li>The only thing that ever reaches the developer is the <strong>feedback message you choose to send</strong>, together with the app version and device model described in section 5.</li>
+    <li>The only thing that ever reaches the developer is the <strong>feedback message you choose to send</strong>, together with the app version and device model described in section 5. Your measurements, camera view and photos never reach the developer or Google.</li>
   </ul>
 </section>
 
 <section class="card">
   <h2>2. Data we collect</h2>
-  <p>The app itself collects <strong>no personal data</strong>. It does not collect your name, email address, phone number, contacts, location, photos, files, advertising ID or usage statistics.</p>
-  <p>The only exception is the optional feedback form: if you write a message and tap <em>Send</em>, that message is delivered to the developer&rsquo;s feedback endpoint. Sending feedback is entirely voluntary, and you can use every measuring feature without ever doing it.</p>
+  <p>The app itself collects <strong>no personal data</strong>. It does not collect your name, email address, phone number, contacts, location, photos, files or usage statistics.</p>
+  <p>The one exception from the app is the optional feedback form: if you write a message and tap <em>Send</em>, that message is delivered to the developer&rsquo;s feedback endpoint. Sending feedback is entirely voluntary, and you can use every measuring feature without ever doing it.</p>
+  <p>The <strong>Google AdMob SDK</strong> included in the app is inactive until <strong>September 1, 2027</strong>; before that date it is never initialised and nothing below is collected. From that date, when the Tools list shows a banner, AdMob may collect:</p>
+  <table>
+    <thead><tr><th>Data</th><th>Purpose</th><th>Collected by</th></tr></thead>
+    <tbody>
+      <tr><td>Advertising ID</td><td>Ad delivery, frequency capping and measurement, and personalised ads where you allow them</td><td>Google AdMob</td></tr>
+      <tr><td>Device and app information, ad interactions</td><td>Ad delivery, fraud prevention, analytics</td><td>Google AdMob</td></tr>
+      <tr><td>IP address (approximate location)</td><td>Ad delivery and fraud prevention</td><td>Google AdMob</td></tr>
+    </tbody>
+  </table>
+  <p>AdMob never receives your measurements, calibration, camera view or photos: the app gives the ad SDK nothing from them. Google processes this data under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</p>
 </section>
 
 <section class="card">
@@ -102,7 +112,8 @@
     <tbody>
       <tr><td><code>CAMERA</code></td><td>Show the live camera level line and take a stamped photo when you tap capture</td><td>When you open the Camera tab</td></tr>
       <tr><td><code>VIBRATE</code></td><td>Buzz at level and pulse near level, so you can measure without looking</td><td>Granted at install</td></tr>
-      <tr><td><code>INTERNET</code></td><td>Send the feedback message you write, if you tap <em>Send</em></td><td>Granted at install</td></tr>
+      <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Send the feedback message you write, if you tap <em>Send</em>; and, from September 1, 2027, let Google AdMob load the Tools banner</td><td>Granted at install</td></tr>
+      <tr><td><code>com.google.android.gms.permission.AD_ID</code></td><td>Lets Google AdMob read the advertising ID once ads are active (from September 1, 2027). Not read before then.</td><td>Granted at install</td></tr>
     </tbody>
   </table>
   <p class="muted">The app also uses the device&rsquo;s motion sensor, which needs no permission. It does not request location, storage, microphone, contacts or notification access.</p>
@@ -110,7 +121,7 @@
 
 <section class="card">
   <h2>5. Network activity and third parties</h2>
-  <p>The app has no server of its own and no account system. Its only network request is the feedback form:</p>
+  <p>The app has no server of its own and no account system. Apart from the ad banner described below, its only network request is the feedback form:</p>
   <table>
     <thead><tr><th>What is sent</th><th>Why</th></tr></thead>
     <tbody>
@@ -120,7 +131,11 @@
     </tbody>
   </table>
   <p>This information is sent over HTTPS to a feedback collector operated for Cool App Helpdesk apps. It is used only to handle your message. It is not sold, not used for advertising, and not combined with any other data.</p>
-  <p>The app contains <strong>no advertising SDK, no analytics SDK, no crash-reporting SDK and no social SDK</strong>. No third party receives your measuring data, camera view or saved photos.</p>
+  <p>Third-party SDKs:</p>
+  <ul>
+    <li><strong>Google AdMob</strong> &mdash; included, but <strong>inactive until September 1, 2027</strong>: the SDK is not initialised before that date, so it makes no requests and reads no identifiers. From that date it loads one banner on the Tools list (never on the Level, Angle, Camera or calibration screens) and may collect the device data in section 2. Where required (for example in the EEA and UK), you will be asked for consent before personalised ads are shown.</li>
+  </ul>
+  <p>The app contains <strong>no analytics SDK, no crash-reporting SDK and no social SDK</strong>. No third party receives your measuring data, camera view or saved photos.</p>
 </section>
 
 <section class="card">
@@ -135,11 +150,12 @@
     <li>To delete all local settings and calibration data: <em>Android Settings &rarr; Apps &rarr; Bubble Level &amp; Angle Meter &rarr; Storage &rarr; Clear storage</em>, or uninstall the app.</li>
     <li>To have a feedback message and any contact address deleted, email <a href="mailto:coolapphelpdesk@gmail.com">coolapphelpdesk@gmail.com</a> with the approximate date you sent it.</li>
   </ul>
+  <p>Data collected by Google AdMob (from September 1, 2027) is retained by Google under its own policies. You can reset or delete your advertising ID in <em>Android Settings &rarr; Google &rarr; Ads</em> (or <em>Settings &rarr; Privacy &rarr; Ads</em>, depending on your device).</p>
 </section>
 
 <section class="card">
   <h2>8. Security</h2>
-  <p>Local data is protected by Android&rsquo;s app sandbox: other apps cannot read the app&rsquo;s private settings without root access. Feedback is transmitted over HTTPS. No method of transmission over the internet is completely secure, but the app keeps the amount of data it sends to the minimum needed to answer your message.</p>
+  <p>Local data is protected by Android&rsquo;s app sandbox: other apps cannot read the app&rsquo;s private settings without root access. Feedback and ad traffic are transmitted over HTTPS. No method of transmission over the internet is completely secure, but the app keeps the amount of data it sends to the minimum needed to answer your message.</p>
 </section>
 
 <section class="card">
