@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Bubble Level &amp; Angle Meter</title>
+<meta name="description" content="Privacy policy for the Bubble Level &amp; Angle Meter Android application by Cool App Helpdesk.">
+<style>
+  :root {
+    --bg: #f4f5f2; --surface: #ffffff; --text: #121417; --muted: #5a5f66;
+    --primary: #b58900; --primary-soft: #fff8cc; --border: #d9dbd6;
+    --positive: #15803d; --positive-bg: #dcfce7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121417; --surface: #1b1e23; --text: #f1f2ee; --muted: #a9aeb6;
+      --primary: #ffd21f; --primary-soft: #3a3416; --border: #30353c;
+      --positive: #4ade80; --positive-bg: #14532d;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 24px 96px; }
+  header { border-radius: 16px; padding: 32px 28px; margin-bottom: 24px;
+    background: linear-gradient(135deg, #121417 0%, #2a2d33 55%, #3a3416 100%); color: #fff;
+    border: 1px solid #3a3416; }
+  header h1 { margin: 0 0 6px; font-size: 28px; font-weight: 700; letter-spacing: -0.01em; }
+  header h1 span { color: #ffd21f; }
+  header p { margin: 0; opacity: 0.92; font-size: 15px; }
+  .card { background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 22px 26px; margin: 14px 0; }
+  h2 { font-size: 19px; font-weight: 600; margin: 0 0 12px; letter-spacing: -0.005em; }
+  p, ul, ol { margin: 0 0 12px; }
+  ul, ol { padding-left: 22px; } li { margin-bottom: 6px; }
+  .muted { color: var(--muted); font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); background: var(--primary-soft); }
+  tr:last-child td { border-bottom: none; }
+  code { background: var(--primary-soft); padding: 1px 6px; border-radius: 4px;
+    font-size: 13px; font-family: "SFMono-Regular", Consolas, Menlo, monospace; }
+  a { color: var(--primary); text-decoration: none; } a:hover { text-decoration: underline; }
+  .badge { display: inline-block; background: var(--positive-bg); color: var(--positive);
+    font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
+  footer { margin-top: 32px; text-align: center; color: var(--muted); font-size: 13px; }
+  @media (max-width: 480px) {
+    .wrap { padding: 24px 16px 64px; }
+    header { padding: 24px 20px; } header h1 { font-size: 24px; }
+    .card { padding: 18px 20px; } h2 { font-size: 17px; }
+    table { font-size: 13px; } th, td { padding: 8px 10px; }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<header>
+  <h1>Privacy <span>Policy</span></h1>
+  <p>Bubble Level &amp; Angle Meter &middot; last updated <time datetime="2026-11-06">November 6, 2026</time></p>
+</header>
+
+<section class="card">
+  <h2>1. Summary</h2>
+  <p>Bubble Level &amp; Angle Meter (&ldquo;the app&rdquo;) is a bubble level, clinometer and slope tool published by <strong>Cool App Helpdesk</strong>.</p>
+  <ul>
+    <li>Sensor readings are measured and shown <strong>entirely on your device</strong>. They are not stored, logged or uploaded.</li>
+    <li>Camera frames are shown live only. A photo is saved to your device only when you tap <em>Take a photo</em>, and it is never sent anywhere.</li>
+    <li>The app contains <strong>no advertising, no analytics and no crash-reporting SDKs</strong>.</li>
+    <li>There is no account and no sign-in. Settings and calibration offsets stay in the app&rsquo;s private storage on your device.</li>
+    <li>The only thing that ever reaches the developer is the <strong>feedback message you choose to send</strong>, together with the app version and device model described in section 5.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>2. Data we collect</h2>
+  <p>The app itself collects <strong>no personal data</strong>. It does not collect your name, email address, phone number, contacts, location, photos, files, advertising ID or usage statistics.</p>
+  <p>The only exception is the optional feedback form: if you write a message and tap <em>Send</em>, that message is delivered to the developer&rsquo;s feedback endpoint. Sending feedback is entirely voluntary, and you can use every measuring feature without ever doing it.</p>
+</section>
+
+<section class="card">
+  <h2>3. Data stored on your device</h2>
+  <p>To do its job the app reads sensor and camera data and keeps a small amount of state on your device. Everything stays on your device and is removed when you clear the app&rsquo;s storage or uninstall the app.</p>
+  <table>
+    <thead><tr><th>Item</th><th>Where</th><th>Sent off device?</th></tr></thead>
+    <tbody>
+      <tr><td>Accelerometer / gravity readings</td><td>Processed in memory while a measuring screen is open</td><td><span class="badge">Never</span></td></tr>
+      <tr><td>Calibration offsets per surface (flat, each edge)</td><td>App-private local storage</td><td><span class="badge">Never</span></td></tr>
+      <tr><td>Settings: theme, accent, units, precision, tolerance, sound, vibration, voice, keep-screen-on, run length, eye height</td><td>App-private local storage</td><td><span class="badge">Never</span></td></tr>
+      <tr><td>Saved vehicle and furniture profiles (dimensions, names)</td><td>App-private local storage</td><td><span class="badge">Never</span></td></tr>
+      <tr><td>Camera frames</td><td>Shown live on the Camera tab; never written to storage</td><td><span class="badge">Never</span></td></tr>
+      <tr><td>A photo you capture with the angle stamp</td><td>Your device&rsquo;s gallery (<code>Pictures/Bubble Level</code>), or the app&rsquo;s pictures folder on older Android</td><td><span class="badge">Never</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="card">
+  <h2>4. Permissions used</h2>
+  <table>
+    <thead><tr><th>Permission</th><th>Reason</th><th>When asked</th></tr></thead>
+    <tbody>
+      <tr><td><code>CAMERA</code></td><td>Show the live camera level line and take a stamped photo when you tap capture</td><td>When you open the Camera tab</td></tr>
+      <tr><td><code>VIBRATE</code></td><td>Buzz at level and pulse near level, so you can measure without looking</td><td>Granted at install</td></tr>
+      <tr><td><code>INTERNET</code></td><td>Send the feedback message you write, if you tap <em>Send</em></td><td>Granted at install</td></tr>
+    </tbody>
+  </table>
+  <p class="muted">The app also uses the device&rsquo;s motion sensor, which needs no permission. It does not request location, storage, microphone, contacts or notification access.</p>
+</section>
+
+<section class="card">
+  <h2>5. Network activity and third parties</h2>
+  <p>The app has no server of its own and no account system. Its only network request is the feedback form:</p>
+  <table>
+    <thead><tr><th>What is sent</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>The message you write, the feedback type and the subject</td><td>To read and answer your feedback</td></tr>
+      <tr><td>Your email address, <strong>only if you type one</strong> in the optional contact field</td><td>So the developer can reply to you</td></tr>
+      <tr><td>App version and version code, device manufacturer and model, Android version and API level, app locale, timestamp</td><td>To reproduce bugs and understand which device the report is about</td></tr>
+    </tbody>
+  </table>
+  <p>This information is sent over HTTPS to a feedback collector operated for Cool App Helpdesk apps. It is used only to handle your message. It is not sold, not used for advertising, and not combined with any other data.</p>
+  <p>The app contains <strong>no advertising SDK, no analytics SDK, no crash-reporting SDK and no social SDK</strong>. No third party receives your measuring data, camera view or saved photos.</p>
+</section>
+
+<section class="card">
+  <h2>6. Children&rsquo;s privacy</h2>
+  <p>The app is a general-purpose measuring tool intended for general audiences and is not directed at children under 13. We do not knowingly collect personal information from children. The feedback form is the only way to contact the developer and it requires a deliberate action by the user.</p>
+</section>
+
+<section class="card">
+  <h2>7. Data retention and deletion</h2>
+  <p>Nothing is stored on a server except feedback you choose to send. Feedback messages are kept only as long as needed to handle them.</p>
+  <ul>
+    <li>To delete all local settings and calibration data: <em>Android Settings &rarr; Apps &rarr; Bubble Level &amp; Angle Meter &rarr; Storage &rarr; Clear storage</em>, or uninstall the app.</li>
+    <li>To have a feedback message and any contact address deleted, email <a href="mailto:coolapphelpdesk@gmail.com">coolapphelpdesk@gmail.com</a> with the approximate date you sent it. You can also reset the advertising ID in Android settings, although this app does not use it.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>8. Security</h2>
+  <p>Local data is protected by Android&rsquo;s app sandbox: other apps cannot read the app&rsquo;s private settings without root access. Feedback is transmitted over HTTPS. No method of transmission over the internet is completely secure, but the app keeps the amount of data it sends to the minimum needed to answer your message.</p>
+</section>
+
+<section class="card">
+  <h2>9. Changes to this policy</h2>
+  <p>If the app&rsquo;s data behaviour changes, this page will be updated and the date at the top will change. Material changes will be noted in the app&rsquo;s release notes on Google Play. Continuing to use the app after an update means you accept the revised policy.</p>
+</section>
+
+<section class="card">
+  <h2>10. Contact</h2>
+  <p>Questions about this policy or the app&rsquo;s privacy practices:</p>
+  <p><strong>Cool App Helpdesk</strong><br>
+  Email: <a href="mailto:coolapphelpdesk@gmail.com">coolapphelpdesk@gmail.com</a><br>
+  Developer page: <a href="https://coolapphelpdesk-bot.github.io/about/">coolapphelpdesk-bot.github.io/about</a></p>
+</section>
+
+<footer>
+  <p>Bubble Level &amp; Angle Meter &middot; package <code>coolapp.bubblelevel</code></p>
+  <p>&copy; 2026 Cool App Helpdesk. All rights reserved.</p>
+</footer>
+
+</main>
+</body>
+</html>
